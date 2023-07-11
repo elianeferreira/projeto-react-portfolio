@@ -29,17 +29,20 @@ const Portfolio = () => {
       <Header 
         title="Projetinhos da Eli💕" 
         image={portfolio} 
-      />
+      
+      /> 
+      <h2 className={styles.repoTitle}>Meus Repositórios</h2>
+       
        <div className={styles.repoContainer}>
-        <h2 className={styles.repoTitle}>Meus Repositórios</h2>
-        <div className={styles.cardContainer}>
+        
+                
         {repo.map((repos)=>{
           return(
            <div key={repos.id} className={styles.cardRepo}>
             <h3 className={styles.cardTitle}>{repos.name}</h3>
             <p className={styles.cardText}>{repos.description}</p>
             <a className={styles.cardLink} href={repos.html_url} target="_blank">
-            <ArrowBendDownRight size={32} />
+            <ArrowBendDownRight size={20} />
             </a>
 
            </div> 
@@ -47,7 +50,7 @@ const Portfolio = () => {
         })}  
         </div>
 
-       </div>
+       
     </>
   )
 }

@@ -1,0 +1,33 @@
+
+
+
+.repoTitle{
+
+display: flex;
+font-size: 2rem;
+justify-content: center;
+text-align: center;
+padding: 2%;
+}
+
+.repoContainer {
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+margin:  0 auto;
+padding: 2rem;
+width: 80%;
+
+}
+
+.cardRepo{
+align-items: center;
+background-color: blanchedalmond;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 4px 8px #1f1e1e;
+
+}
